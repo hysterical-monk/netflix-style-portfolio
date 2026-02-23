@@ -31,7 +31,7 @@ export default function HireMe() {
             {/* ACTION BUTTONS */}
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href="/resume.pdf"
+                href="/Srinivas S_resume.pdf"
                 target="_blank"
                 className="bg-white text-black px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition"
               >
@@ -39,7 +39,7 @@ export default function HireMe() {
               </a>
 
               <a
-                href="/resume.pdf"
+                href="/Srinivas S_resume.pdf"
                 download
                 className="bg-red-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-red-700 transition"
               >

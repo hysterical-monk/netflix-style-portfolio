@@ -15,6 +15,8 @@ export default function Home() {
       <main className="pb-20">
         <HeroRow items={hero} />
         <Row title="Projects" items={projects} />
+
+        {/* OVERVIEW ONLY */}
         <SkillsRow title="Overview" items={overview} />
       </main>
     </div>

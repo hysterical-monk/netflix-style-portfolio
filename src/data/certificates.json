@@ -4,32 +4,49 @@
     "title": "Python Machine Learning and NLP",
     "subtitle": "Supervised, Unsupervised & Neural Networks with NLP",
     "issuer": "MEVI Technologies LLP",
-    
-    "image": "/public/certificates/ml.jpg"
+    "type": "image/jpg",
+    "file": "/public/certificates/ml.jpg"
+  },
+  {
+    "id": "IBM-cert",
+    "title": "IBM Cloud Essentials",
+    "subtitle": "IBM Cloud Essentials is a comprehensive course that provides an introduction to IBM Cloud services and solutions, covering topics such as cloud computing, infrastructure, and various IBM Cloud offerings.",
+    "issuer": "IBM",
+    "type": "pdf",
+    "file": "/public/certificates/IBM.pdf"
+  },
+  {
+    "id": "AWS-cert",
+    "title": "AWS Certified Developer - Associate",
+    "subtitle": "AWS Certified Developer - Associate is a certification that validates the skills and knowledge required to develop and maintain applications on AWS.",
+    "issuer": "AWS via Infosys Springboard",
+    "type": "pdf",
+    "file": "/public/certificates/srinivas aws.pdf"
   },
   {
     "id": "djfs-cert",
     "title": "Introduction to Django Full Stack",
     "subtitle": "detailed workshop related to Django Full Stack",
     "issuer": "Devminds",
-   
-    "image": "/certificates/djfs.jpg"
+   "type": "image/jpg",
+    "file": "/public/certificates/djfs.jpg"
   },
   {
     "id": "tata-cert",
     "title": "GenAI Powered Data Analytics Job Simulation",
     "subtitle": "GenAI-powered Data Analytics job simulation, gaining hands-on experience by working on real-world projects and challenges.",
     "issuer": "Tata via Forage",
-    
-    "image": "/certificates/tata.jpeg"
+    "type": "pdf",
+    "file": "/public/certificates/tata.pdf"
   },
     {
     "id": "stcom-cert",
     "title": "Job readiness and Trending Technologies",
     "subtitle": "GenAI-powered Data Analytics job simulation, gaining hands-on experience by working on real-world projects and challenges.",
     "issuer": "study comrade",
-    
-    "image": "/certificates/stcom.jpg"
+    "type": "image/jpg",
+    "file": "/public/certificates/stcom.jpg"
   }
+  
 ]
  

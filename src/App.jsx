@@ -84,7 +84,7 @@ function AnimatedRoutes() {
             </PageTransition>
           }
         />
-
+<Route path="/certificates" element={<Certificates />} />
         <Route
           path="/journey"
           element={

@@ -1,19 +1,21 @@
 export default function CertificateCard({ cert, onClick }) {
   return (
     <div
-      onClick={() => onClick(cert)}
+      onClick={onClick}
       className="
-        group cursor-pointer
-        relative
-        bg-[#141414]
+        group relative
+        h-[180px] md:h-[240px]
         rounded-xl
-        h-[220px] md:h-[260px]
-        flex flex-col items-center justify-center text-center
+        bg-[#141414]
+        cursor-pointer
+        flex items-center justify-center
+        text-center
+        px-6
         transition-transform duration-300
         hover:scale-[1.05]
       "
     >
-      {/* RED GLOW – OUTSIDE ONLY */}
+      {/* RED GLOW */}
       <div
         className="
           absolute -inset-3
@@ -23,16 +25,32 @@ export default function CertificateCard({ cert, onClick }) {
           opacity-0
           group-hover:opacity-100
           transition
+          pointer-events-none
           -z-10
         "
       />
 
-      <h3 className="text-lg font-semibold px-4">
-        {cert.title}
-      </h3>
-      <p className="text-sm text-gray-400 mt-2">
-        {cert.issuer}
-      </p>
+      {/* OPEN ICON */}
+      <div
+        className="
+          absolute top-3 right-3
+          text-gray-400
+          text-sm md:text-base
+          group-hover:text-white
+        "
+      >
+        {cert.type === "pdf" ? "📄" : "🖼️"}
+      </div>
+
+      {/* TEXT */}
+      <div>
+        <h3 className="font-semibold text-base md:text-lg">
+          {cert.title}
+        </h3>
+        <p className="text-sm text-gray-400 mt-2">
+          {cert.issuer}
+        </p>
+      </div>
     </div>
   );
 }
