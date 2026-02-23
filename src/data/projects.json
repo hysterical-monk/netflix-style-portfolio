@@ -1,0 +1,107 @@
+[
+  {
+    "id": "anime",
+    "title": "Anime Recommendation System",
+    "description": "A content-based anime recommendation system using NLP.",
+    "image": "/images/anime.jpg",
+    "heroImage": "/images/anime-hero.jpeg",
+    "video": "/videos/anime-trailer.mp4",
+    "subtitle": "NLP based recommender",
+    "tech": ["Python", "TF-IDF", "Cosine Similarity"],
+    "outcomes": [
+      "Recommends similar anime using metadata",
+      "Uses NLP based similarity scoring",
+      "Fast and scalable recommendation engine"
+    ],
+    "links": {
+      "github": "https://github.com/hysterical-monk/my_anime_reccomendations",
+      "notebook": "https://github.com/hysterical-monk/my_anime_reccomendations/blob/main/AnimeLIst.ipynb"
+    }
+  },
+
+  {
+    "id": "nutrinova",
+    "title": "NutriNova",
+    "description": "AI-powered nutrition tracking and meal recommendation platform.",
+    "image": "/images/nutri.jpeg",
+    "heroImage": "/images/nutrinova-hero.jpeg",
+    "video": "/images/nutrinova-preview.gif",
+    "tech": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express",
+      "AI Recommendation Logic"
+    ],
+    "outcomes": [
+      "Built scalable meal recommendation interface",
+      "Improved UI responsiveness and structure",
+      "Enhanced user experience with structured dashboards"
+    ],
+    "myRole": [
+      "Contributed to frontend UI development",
+      "Improved layout responsiveness",
+      "Assisted in feature integration and debugging"
+    ],
+    "links": {
+      "github": "https://github.com/hysterical-monk/NutriNova"
+    }
+  },
+
+  {
+    "id": "email-spam-nlp",
+    "title": "Email Spam Detection using NLP",
+    "description": "A Natural Language Processing based spam classifier built in Google Colab.",
+    "image": "/images/spam.jpeg",
+    "heroImage": "/images/spam-hero.jpeg",
+    "video": "",
+    "tech": [
+      "Python",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+      "NLP",
+      "TF-IDF",
+      "Google Colab"
+    ],
+    "outcomes": [
+      "Built complete NLP pipeline from scratch",
+      "Performed text cleaning & preprocessing",
+      "Used TF-IDF vectorization",
+      "Trained classification model for spam detection"
+    ],
+    "links": {
+    "github": "https://github.com/hysterical-monk/Email-Spam-Detection-using-NLP",
+      "notebook": "https://github.com/hysterical-monk/Email-Spam-Detection-using-NLP/blob/main/nlp.ipynb"
+    }
+  }
+  ,
+  {
+  "id": "stock-crash-detector",
+  "title": "Stock Market Crash Detector",
+  "description": "A data-driven system to detect potential stock market crashes using historical price movements and statistical indicators.",
+  "image": "/images/stock-cover.jpeg",
+  "heroImage": "/images/stock-hero.jpeg",
+  "video": "/videos/stock market.mp4",
+  "subtitle": "Market risk detection using data analysis",
+  "tech": [
+    "Python",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Time Series Analysis",
+    "Financial Data Analysis"
+  ],
+  "outcomes": [
+    "Analyzed historical stock market data",
+    "Identified abnormal price movements and volatility spikes",
+    "Visualized crash patterns using statistical indicators",
+    "Built an interpretable analysis pipeline"
+  ],
+  "links": {
+    "github": "https://github.com/hysterical-monk/Stock-Market-Crash-Detector",
+    "notebook": "https://github.com/hysterical-monk/Stock-Market-Crash-Detector/blob/main/stock%20market%20crash%20detector.ipynb"
+  }
+}
+
+]

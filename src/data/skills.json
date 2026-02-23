@@ -1,0 +1,56 @@
+[
+  {
+    "id": "python",
+    "name": "Python",
+    "level": "Intermediate",
+    "category": "Programming & Logic"
+  },
+  {
+    "id": "c",
+    "name": "C",
+    "level": "Basics (Data Structures)",
+    "category": "Programming & Logic"
+  },
+  {
+    "id": "react",
+    "name": "React.js",
+    "level": "Intermediate",
+    "category": "Web & Application Development"
+  },
+  {
+    "id": "node",
+    "name": "Node.js",
+    "level": "Basics",
+    "category": "Web & Application Development"
+  },
+  {
+    "id": "ml",
+    "name": "Machine Learning",
+    "level": "Advanced",
+    "category": "Machine Learning & AI"
+  },
+  {
+    "id": "nlp",
+    "name": "NLP",
+    "level": "Intermediate",
+    "category": "Machine Learning & AI"
+  },
+  {
+    "id": "pandas",
+    "name": "Pandas",
+    "level": "Intermediate",
+    "category": "Data Analysis & Visualization"
+  },
+  {
+    "id": "git",
+    "name": "Git & GitHub",
+    "level": "Intermediate",
+    "category": "Tools & Environments"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "level": "Basics",
+    "category": "Cloud & Databases"
+  }
+]

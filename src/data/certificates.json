@@ -1,0 +1,35 @@
+[
+  {
+    "id": "ml-cert",
+    "title": "Python Machine Learning and NLP",
+    "subtitle": "Supervised, Unsupervised & Neural Networks with NLP",
+    "issuer": "MEVI Technologies LLP",
+    
+    "image": "/public/certificates/ml.jpg"
+  },
+  {
+    "id": "djfs-cert",
+    "title": "Introduction to Django Full Stack",
+    "subtitle": "detailed workshop related to Django Full Stack",
+    "issuer": "Devminds",
+   
+    "image": "/certificates/djfs.jpg"
+  },
+  {
+    "id": "tata-cert",
+    "title": "GenAI Powered Data Analytics Job Simulation",
+    "subtitle": "GenAI-powered Data Analytics job simulation, gaining hands-on experience by working on real-world projects and challenges.",
+    "issuer": "Tata via Forage",
+    
+    "image": "/certificates/tata.jpeg"
+  },
+    {
+    "id": "stcom-cert",
+    "title": "Job readiness and Trending Technologies",
+    "subtitle": "GenAI-powered Data Analytics job simulation, gaining hands-on experience by working on real-world projects and challenges.",
+    "issuer": "study comrade",
+    
+    "image": "/certificates/stcom.jpg"
+  }
+]
+ 

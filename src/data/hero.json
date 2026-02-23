@@ -1,0 +1,42 @@
+[
+  {
+    "id": "About",
+    "title": "About Me",
+    "subtitle": "Who I am, what I do, and why I build",
+    "imageDesktop": "/images/hero/f49f0f57-9734-454c-8535-3199107e3e0b.jpg",
+    "imageMobile": "/images/hero/about-mobile.jpeg",
+    "link": "/About"
+  },
+  {
+    "id": 2,
+    "title": "Projects",
+    "subtitle": "AI, ML, Full Stack, Real world problems & deep learning experiments",
+    "imageDesktop": "/images/hero/ai-desktop.gif",
+    "imageMobile": "/images/hero/ai-mobile.jpeg",
+    "link": "/projects"
+  },
+  {
+    "id": 3,
+    "title": "Full Stack",
+    "subtitle": "Web apps, APIs and systems I built",
+    "imageDesktop": "/images/hero/fullstack-desktop.jpg",
+    "imageMobile": "/images/hero/fullstack-mobile.jpeg",
+    "link": "/projects/fullstack"
+  },
+  {
+    "id": 4,
+    "title": "Skills",
+    "subtitle": "Technologies I work with daily",
+    "imageDesktop": "/images/hero/skills-desktop.jpg",
+    "imageMobile": "/images/hero/skills-mobile.jpeg",
+    "link": "/skills"
+  },
+  {
+    "id": 5,
+    "title": "Resume",
+    "subtitle": "Education, experience & achievements",
+    "imageDesktop": "/images/hero/resume-desktop.jpg",
+    "imageMobile": "/images/hero/resume-mobile.jpeg",
+    "link": "/hire"
+  }
+]
