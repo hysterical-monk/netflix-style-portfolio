@@ -12,9 +12,7 @@ export default function ProjectDetail() {
   const project = projects.find(p => p.id === id);
   const [playVideo, setPlayVideo] = useState(false);
 
-useEffect(() => {
-  document.documentElement.scrollTop = 0;
-}, []);
+
 
 
   /* Delay video / gif */

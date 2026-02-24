@@ -14,8 +14,8 @@ import About from "./pages/About";
 import Certificates from "./pages/Certificates";
 import CertificateDetail from "./pages/CertificateDetail";
 
-
 import PageTransition from "./components/PageTransition";
+import ScrollMemory from "./components/ScrollMemory";
 
 /* 🔥 ROUTE TRANSITIONS ONLY */
 function AnimatedRoutes() {
@@ -25,7 +25,7 @@ function AnimatedRoutes() {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
 
-        {/* ENTRY FLOW (NO NAVBAR) */}
+        {/* ENTRY FLOW */}
         <Route path="/" element={<IntroGate />} />
         <Route path="/intro" element={<Intro />} />
         <Route path="/profiles" element={<ProfileSelect />} />
@@ -39,24 +39,6 @@ function AnimatedRoutes() {
             </PageTransition>
           }
         />
-        <Route
-  path="/certificates"
-  element={
-    <PageTransition>
-      <Certificates />
-    </PageTransition>
-  }
-/>
-
-<Route
-  path="/certificate/:id"
-  element={
-    <PageTransition>
-      <CertificateDetail />
-    </PageTransition>
-  }
-/>
-
 
         <Route
           path="/projects"
@@ -77,6 +59,24 @@ function AnimatedRoutes() {
         />
 
         <Route
+          path="/certificates"
+          element={
+            <PageTransition>
+              <Certificates />
+            </PageTransition>
+          }
+        />
+
+        <Route
+          path="/certificate/:id"
+          element={
+            <PageTransition>
+              <CertificateDetail />
+            </PageTransition>
+          }
+        />
+
+        <Route
           path="/skills"
           element={
             <PageTransition>
@@ -84,7 +84,7 @@ function AnimatedRoutes() {
             </PageTransition>
           }
         />
-<Route path="/certificates" element={<Certificates />} />
+
         <Route
           path="/journey"
           element={
@@ -117,11 +117,14 @@ function AnimatedRoutes() {
   );
 }
 
-/* ✅ SINGLE EXPORT — NO SCROLL LOGIC HERE */
+/* ✅ ROOT */
+
 export default function App() {
   return (
     <BrowserRouter>
-      <AnimatedRoutes />
+      <ScrollMemory>
+        <AnimatedRoutes />
+      </ScrollMemory>
     </BrowserRouter>
   );
 }

@@ -1,17 +1,6 @@
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 
 export default function PageTransition({ children }) {
-  useEffect(() => {
-    // ⛔ DO NOT SCROLL IMMEDIATELY
-    // Scroll AFTER animation begins (prevents jump)
-    const t = setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: "auto" });
-    }, 180); // must be LESS than animation duration
-
-    return () => clearTimeout(t);
-  }, []);
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 18 }}

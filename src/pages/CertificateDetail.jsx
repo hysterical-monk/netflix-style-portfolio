@@ -27,27 +27,39 @@ export default function CertificateDetail() {
         Issued by {cert.issuer}
       </p>
 
-      <img
-  src={activeCert.image}
-  alt={activeCert.title}
-  className="max-h-[90vh] max-w-[90vw] rounded-lg"
-/>
-      <a
-        href={cert.link}
-        target="_blank"
-        rel="noreferrer"
-        className="
-          inline-block
-          mt-8
-          bg-red-600
-          hover:bg-red-700
-          px-6 py-3
-          rounded
-          font-semibold
-        "
-      >
-        Verify Certificate
-      </a>
+      {/* IMAGE OR PDF */}
+      {cert.type === "pdf" ? (
+        <iframe
+          src={cert.file}
+          className="w-full h-[80vh] mt-10 rounded-lg bg-black"
+          title={cert.title}
+        />
+      ) : (
+        <img
+          src={cert.image}
+          alt={cert.title}
+          className="mt-10 max-h-[80vh] max-w-full rounded-lg mx-auto"
+        />
+      )}
+
+      {cert.link && (
+        <a
+          href={cert.link}
+          target="_blank"
+          rel="noreferrer"
+          className="
+            inline-block
+            mt-8
+            bg-red-600
+            hover:bg-red-700
+            px-6 py-3
+            rounded
+            font-semibold
+          "
+        >
+          Verify Certificate
+        </a>
+      )}
     </div>
   );
 }
