@@ -124,7 +124,7 @@ export default function HireMe() {
                 </h3>
 
                 <p className="text-sm text-gray-600 mt-1">
-                  AI & Full-Stack Developer
+                  AIML student with interest on cloud, data analysis and Full-Stack Developer
                 </p>
 
                 <p className="mt-5 text-gray-700 leading-relaxed">
@@ -190,11 +190,11 @@ export default function HireMe() {
 
               <div className="mt-5 space-y-3">
                 <div className="bg-gray-100 rounded-lg px-4 py-3 text-sm">
-                  📧 srinivas@example.com
+                  📧 srinivazzzat@gmail.com
                 </div>
 
                 <div className="bg-gray-100 rounded-lg px-4 py-3 text-sm">
-                  📞 +91 95965 45300
+                  📞 +91 9449945527
                 </div>
               </div>
 

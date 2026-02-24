@@ -16,7 +16,7 @@ export default function About() {
           </h1>
 
           <p className="mt-6 max-w-3xl text-gray-300 text-base md:text-lg leading-relaxed">
-            I’m Srinivas — an AI & Full-Stack developer who enjoys turning
+            I’m Srinivas — AIML student with interest on cloud, data analysis and Full-Stack development who enjoys turning
             complex ideas into clean, usable products.
             From machine learning pipelines to Netflix-style interfaces,
             I care about both{" "}
