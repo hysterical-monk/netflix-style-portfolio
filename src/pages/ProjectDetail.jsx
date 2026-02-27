@@ -1,27 +1,43 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-
 import projects from "../data/projects.json";
 
+/*
+  ProjectDetail Page
+  ------------------
+  Shows a single project in Netflix-style detail view.
 
-
+  IMPORTANT SCROLL RULE:
+  - Detail pages ALWAYS start from top
+  - Dashboard scroll is handled by ScrollManager
+*/
 
 export default function ProjectDetail() {
   const { id } = useParams();
-  const navigate = useNavigate();
   const project = projects.find(p => p.id === id);
+
+  // Controls delayed video / gif playback
   const [playVideo, setPlayVideo] = useState(false);
 
+  // -----------------------------
+  // FORCE DETAIL PAGE TO TOP
+  // -----------------------------
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-
-
-  /* Delay video / gif */
+  // -----------------------------
+  // DELAY VIDEO / GIF LOAD
+  // -----------------------------
   useEffect(() => {
     if (!project?.video) return;
     const t = setTimeout(() => setPlayVideo(true), 1000);
     return () => clearTimeout(t);
   }, [project]);
 
+  // -----------------------------
+  // PROJECT NOT FOUND
+  // -----------------------------
   if (!project) {
     return (
       <div className="bg-black text-white min-h-screen flex items-center justify-center">
@@ -33,10 +49,10 @@ export default function ProjectDetail() {
   return (
     <div className="bg-black text-white min-h-screen">
 
-      {/* HERO */}
+      {/* ================= HERO SECTION ================= */}
       <section className="relative w-full h-[60vh] md:h-[75vh] overflow-hidden">
 
-        {/* HERO IMAGE */}
+        {/* HERO IMAGE (shown first) */}
         <img
           src={project.heroImage || project.image}
           alt={project.title}
@@ -47,7 +63,7 @@ export default function ProjectDetail() {
           `}
         />
 
-        {/* MP4 VIDEO */}
+        {/* MP4 VIDEO BACKGROUND */}
         {project.video?.endsWith(".mp4") && playVideo && (
           <video
             src={project.video}
@@ -60,25 +76,21 @@ export default function ProjectDetail() {
           />
         )}
 
-        {/* GIF PREVIEW */}
+        {/* GIF BACKGROUND */}
         {project.video?.endsWith(".gif") && playVideo && (
           <img
             src={project.video}
             alt="preview"
-            className="
-              absolute inset-0 w-full h-full object-cover
-              transition-opacity duration-700 opacity-100
-            "
+            className="absolute inset-0 w-full h-full object-cover"
           />
         )}
 
-        {/* OVERLAY */}
+        {/* DARK GRADIENT OVERLAY */}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
 
-        {/* TEXT */}
+        {/* HERO TEXT */}
         <div className="relative z-10 h-full flex items-end px-6 md:px-16 pb-6 md:pb-10">
           <div className="max-w-2xl">
-
             <h1 className="text-2xl md:text-5xl font-bold">
               {project.title}
             </h1>
@@ -87,29 +99,30 @@ export default function ProjectDetail() {
               {project.description}
             </p>
 
-            {/* BUTTONS */}
-            <div className="mt-6 flex gap-3 flex-nowrap overflow-x-auto md:flex-wrap">
-  {project.links?.github && (
-    <a
-      href={project.links.github}
-      target="_blank"
-      rel="noreferrer"
-      className="shrink-0 bg-red-600 hover:bg-red-700 px-5 py-2 rounded text-sm font-semibold transition"
-    >
-      GitHub
-    </a>
-  )}
+            {/* ACTION BUTTONS */}
+            <div className="mt-6 flex gap-3 flex-nowrap overflow-x-auto">
 
-  {project.links?.notebook && (
-    <a
-      href={project.links.notebook}
-      target="_blank"
-      rel="noreferrer"
-      className="shrink-0 bg-white text-black hover:bg-gray-200 px-5 py-2 rounded text-sm font-semibold transition"
-    >
-      View Notebook
-    </a>
-  )}
+              {project.links?.github && (
+                <a
+                  href={project.links.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="shrink-0 bg-red-600 hover:bg-red-700 px-5 py-2 rounded text-sm font-semibold transition"
+                >
+                  GitHub
+                </a>
+              )}
+
+              {project.links?.notebook && (
+                <a
+                  href={project.links.notebook}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="shrink-0 bg-white text-black hover:bg-gray-200 px-5 py-2 rounded text-sm font-semibold transition"
+                >
+                  View Notebook
+                </a>
+              )}
 
               {project.links?.demo && (
                 <a
@@ -122,14 +135,14 @@ export default function ProjectDetail() {
                 </a>
               )}
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* CONTENT */}
+      {/* ================= CONTENT SECTION ================= */}
       <main className="px-6 md:px-16 py-12 space-y-12">
 
+        {/* TECHNOLOGIES */}
         {project.tech && (
           <section>
             <h2 className="text-2xl font-semibold mb-4">
@@ -148,6 +161,7 @@ export default function ProjectDetail() {
           </section>
         )}
 
+        {/* OUTCOMES */}
         {project.outcomes && (
           <section>
             <h2 className="text-2xl font-semibold mb-4">
@@ -161,6 +175,7 @@ export default function ProjectDetail() {
           </section>
         )}
 
+        {/* YOUR ROLE */}
         {project.myRole && (
           <section>
             <h2 className="text-2xl font-semibold mb-4">

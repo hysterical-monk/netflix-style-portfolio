@@ -1,5 +1,12 @@
 import CertificateCard from "./CertificateCard";
 
+/*
+  CertificatesRow
+  ---------------
+  Keep it as BOX GRID.
+  NO overflow, NO scroll tricks.
+*/
+
 export default function CertificatesRow({ items, onSelect }) {
   return (
     <section className="px-6 md:px-12 mt-16">
@@ -7,11 +14,14 @@ export default function CertificatesRow({ items, onSelect }) {
         Certificates
       </h2>
 
-      <div className="
-        grid grid-cols-2
-        md:grid-cols-3
-        gap-6 md:gap-8
-      ">
+      <div
+        className="
+          grid
+          grid-cols-2
+          md:grid-cols-3
+          gap-6 md:gap-8
+        "
+      >
         {items.map(cert => (
           <CertificateCard
             key={cert.id}

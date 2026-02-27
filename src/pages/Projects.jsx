@@ -1,22 +1,37 @@
+import { useEffect } from "react";
+import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 import projects from "../data/projects.json";
-import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 
+/*
+  Projects Page
+  -------------
+  RULES:
+  - Page MUST start at top
+  - NO vertical (y) animation
+  - Only opacity animation is allowed
+*/
+
 export default function Projects() {
+
+  // ✅ FORCE PAGE TO START AT TOP
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-black text-white min-h-screen">
       <Navbar />
 
-      {/* PAGE FADE FIX */}
       <motion.main
         className="px-6 md:px-12 pb-24"
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -12 }}
+        initial={{ opacity: 0 }}     // ✅ SAFE
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
         transition={{ duration: 0.35, ease: "easeOut" }}
       >
-        {/* breathing space below navbar */}
+        {/* Spacer below fixed navbar */}
         <div className="h-6 md:h-10" />
 
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
@@ -28,6 +43,7 @@ export default function Projects() {
           problem solving and experimentation.
         </p>
 
+        {/* PROJECT GRID */}
         <div
           className="
             grid

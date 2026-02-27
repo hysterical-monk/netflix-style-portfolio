@@ -1,5 +1,5 @@
+import { useEffect } from "react";
 import Navbar from "../components/Navbar";
-import { motion } from "framer-motion";
 
 const skills = [
   {
@@ -25,12 +25,16 @@ const skills = [
 ];
 
 export default function Skills() {
+  // ✅ FORCE PAGE TO START AT TOP
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-black text-white min-h-screen">
       <Navbar />
 
       <main className="px-6 md:px-16 pb-24">
-
         <h1 className="text-3xl md:text-4xl font-bold mb-14">
           Technical Skills
         </h1>
@@ -55,7 +59,6 @@ export default function Skills() {
             </section>
           ))}
         </div>
-
       </main>
     </div>
   );

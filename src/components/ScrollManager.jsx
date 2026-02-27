@@ -1,29 +1,48 @@
 import { useEffect, useRef } from "react";
 import { useLocation, useNavigationType } from "react-router-dom";
 
+/*
+  ScrollManager
+  -------------
+  - NO auto-scroll on first load
+  - Restore scroll ONLY on browser back
+  - Works for Overview page
+*/
+
 export default function ScrollManager({ children }) {
   const location = useLocation();
-  const navType = useNavigationType(); // PUSH | POP
-  const positions = useRef({});
+  const navType = useNavigationType();
+  const isFirstLoad = useRef(true);
 
-  // save scroll before leaving page
+  const memory = useRef({
+    pageY: {}
+  });
+
+  const pageKey = location.pathname;
+
+  // Save scroll when leaving
   useEffect(() => {
     return () => {
-      positions.current[location.pathname] = window.scrollY;
+      memory.current.pageY[pageKey] = window.scrollY;
     };
-  }, [location.pathname]);
+  }, [pageKey]);
 
-  // restore or reset after navigation
+  // Restore scroll ONLY on BACK
   useEffect(() => {
-    if (navType === "POP") {
-      const y = positions.current[location.pathname] ?? 0;
+    if (isFirstLoad.current) {
+      isFirstLoad.current = false;
+      return; // ⛔ DO NOTHING on first load
+    }
+
+    if (navType !== "POP") return;
+
+    const y = memory.current.pageY[pageKey];
+    if (y !== undefined) {
       requestAnimationFrame(() => {
         window.scrollTo(0, y);
       });
-    } else {
-      window.scrollTo(0, 0);
     }
-  }, [location.pathname, navType]);
+  }, [pageKey, navType]);
 
   return children;
 }
