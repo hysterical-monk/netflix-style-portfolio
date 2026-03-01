@@ -13,9 +13,9 @@ import HireMe from "./pages/HireMe";
 import About from "./pages/About";
 import Certificates from "./pages/Certificates";
 import CertificateDetail from "./pages/CertificateDetail";
-
+import VibesPage from "./music/VibesPage";
 import PageTransition from "./components/PageTransition";
-
+  
 export default function AnimatedRoutes() {
   const location = useLocation();
 
@@ -109,6 +109,17 @@ export default function AnimatedRoutes() {
             </PageTransition>
           }
         />
+
+   
+
+<Route
+  path="/vibes"
+  element={
+    <PageTransition>
+      <VibesPage />
+    </PageTransition>
+  }
+/>
 
       </Routes>
     </AnimatePresence>

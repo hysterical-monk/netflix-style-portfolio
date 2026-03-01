@@ -1,6 +1,7 @@
 import skillsImg from "../assets/overview/skills.jpeg";
 import journeyImg from "../assets/overview/journey.jpeg";
 import certImg from "../assets/overview/certificates.jpeg";
+import vibesImg from "../assets/vibes.jpeg"; // ✅ CORRECT PATH
 
 const overview = [
   {
@@ -23,6 +24,13 @@ const overview = [
     subtitle: "Verified skills & achievements",
     image: certImg,
     link: "/certificates",
+  },
+  {
+    id: "vibes",
+    title: "Lately Vibing",
+    subtitle: "What I listen to while building",
+    image: vibesImg,
+    link: "/vibes",
   },
 ];
 

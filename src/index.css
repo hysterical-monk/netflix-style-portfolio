@@ -89,3 +89,40 @@ body {
 .animate-profileFade {
   animation: profileFade 0.45s ease forwards;
 }
+/* ===============================
+   NETFLIX-STYLE FADE ANIMATIONS
+   =============================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.45s ease forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.35s ease forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.35s ease-out;
+}
