@@ -1,55 +1,46 @@
+// src/music/useLyricsSync.js
 import { useEffect, useState } from "react";
 
-/* -------- PARSE LRC -------- */
-export function parseLRC(text) {
-  return text
-    .split("\n")
-    .map(line => {
-      const match = line.match(/\[(\d+):(\d+\.?\d*)\](.*)/);
-      if (!match) return null;
-
-      const minutes = Number(match[1]);
-      const seconds = Number(match[2]);
-      return {
-        time: minutes * 60 + seconds,
-        text: match[3].trim(),
-      };
-    })
-    .filter(Boolean);
-}
-
-/* -------- SYNC HOOK -------- */
-export default function useLyricsSync(audioRef, lrcPath) {
+export function useLyricsSync(audioRef, lrcPath) {
   const [lines, setLines] = useState([]);
-  const [current, setCurrent] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Load LRC
   useEffect(() => {
     fetch(lrcPath)
-      .then(res => res.text())
-      .then(text => setLines(parseLRC(text)))
-      .catch(err => console.error("Lyrics load failed", err));
+      .then(r => r.text())
+      .then(text => {
+        const parsed = text
+          .split("\n")
+          .map(l => {
+            const m = l.match(/\[(\d+):(\d+\.\d+)\](.*)/);
+            if (!m) return null;
+            return {
+              time: +m[1] * 60 + +m[2],
+              text: m[3],
+            };
+          })
+          .filter(Boolean);
+        setLines(parsed);
+      });
   }, [lrcPath]);
 
-  // Sync with audio
   useEffect(() => {
-    if (!audioRef.current || lines.length === 0) return;
+    const a = audioRef.current;
+    if (!a) return;
 
-    const audio = audioRef.current;
-
-    const onTime = () => {
-      const t = audio.currentTime;
-      for (let i = lines.length - 1; i >= 0; i--) {
-        if (t >= lines[i].time) {
-          setCurrent(i);
+    const tick = () => {
+      const t = a.currentTime;
+      for (let i = 0; i < lines.length; i++) {
+        if (t < lines[i].time) {
+          setCurrentIndex(i - 1);
           break;
         }
       }
     };
 
-    audio.addEventListener("timeupdate", onTime);
-    return () => audio.removeEventListener("timeupdate", onTime);
-  }, [lines, audioRef]);
+    a.addEventListener("timeupdate", tick);
+    return () => a.removeEventListener("timeupdate", tick);
+  }, [lines]);
 
-  return { lines, current };
+  return { lines, currentIndex };
 }

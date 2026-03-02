@@ -1,33 +1,10 @@
-import { useEffect, useRef } from "react";
+// src/music/LyricsPanel.jsx
+import LyricsView from "./LyricsView";
 
-export default function LyricsPanel({ lines, currentIndex }) {
-  const containerRef = useRef();
-
-  useEffect(() => {
-    const el = containerRef.current?.querySelector(
-      `[data-line="${currentIndex}"]`
-    );
-    el?.scrollIntoView({ block: "center", behavior: "smooth" });
-  }, [currentIndex]);
-
+export default function LyricsPanel({ audioRef, lrc }) {
   return (
-    <div
-      ref={containerRef}
-      className="flex-1 overflow-y-auto px-12 py-16 text-center"
-    >
-      {lines.map((line, i) => (
-        <div
-          key={i}
-          data-line={i}
-          className={`my-3 transition-all duration-300 ${
-            i === currentIndex
-              ? "text-white text-2xl font-semibold"
-              : "text-white/40 text-lg"
-          }`}
-        >
-          {line.text}
-        </div>
-      ))}
+    <div className="hidden md:block w-1/2 px-12 py-24">
+      <LyricsView audioRef={audioRef} lrc={lrc} />
     </div>
   );
 }

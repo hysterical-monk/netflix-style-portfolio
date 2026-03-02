@@ -1,8 +1,9 @@
+// src/music/VibesPage.jsx
 import Navbar from "../components/Navbar";
 import vibes from "./vibes.data";
 import VibeRow from "./VibeRow";
-import { useState, useEffect } from "react";
 import PlayerOverlay from "./PlayerOverlay";
+import { useState, useEffect } from "react";
 
 export default function VibesPage() {
   const [activeSong, setActiveSong] = useState(null);
@@ -15,11 +16,11 @@ export default function VibesPage() {
 
   return (
     <div className="bg-black min-h-screen text-white">
-      <Navbar />
+      {!activeSong && <Navbar />}
 
-      <main className="px-6 md:px-16 pt-28 pb-2">
-        <h1 className="text-4xl md:text-5xl font-bold mb-12">
-          Lately Vibing <span>🎧</span>
+      <main className="px-6 md:px-16 pt-28 pb-24">
+        <h1 className="text-5xl font-bold mb-12">
+          Lately Vibing 🎧
         </h1>
 
         {categories.map(cat => (
@@ -35,6 +36,8 @@ export default function VibesPage() {
       {activeSong && (
         <PlayerOverlay
           song={activeSong}
+          allSongs={vibes}
+          setSong={setActiveSong}
           onClose={() => setActiveSong(null)}
         />
       )}

@@ -15,14 +15,7 @@
     "imageMobile": "/images/hero/ai-mobile.jpeg",
     "link": "/projects"
   },
-  {
-    "id": 3,
-    "title": "Full Stack",
-    "subtitle": "Web apps, APIs and systems I built",
-    "imageDesktop": "/images/hero/fullstack-desktop.jpg",
-    "imageMobile": "/images/hero/fullstack-mobile.jpeg",
-    "link": "/projects/fullstack"
-  },
+  
   {
     "id": 4,
     "title": "Skills",

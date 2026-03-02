@@ -1,5 +1,7 @@
 // src/music/vibes.data.js
 
+import { video } from "framer-motion/client";
+
 const vibes = [
   {
     id: "teenage-dream",
@@ -38,13 +40,14 @@ const vibes = [
   category: "Bollywood",
 },
   {
-    id: "nenjukkul",
-    title: "Nenjukkul Peidhidum",
-    artist: "Hariharan",
-    cover: "/images/Nenjukkul.png",
-    audio: "/sounds/Nenjukkul.mp3",
-    lyrics: "/lyrics/Nenjukkul.lrc",
-    category: "Tamil",
+  id: "new-york-nagaram",
+  title: "New York Nagaram",
+  artist: "A. R. Rahman",
+  cover: "/images/New York Nagaram.png",
+  audio: "/sounds/New York Nagaram.mp3",
+  lyrics: "/lyrics/New York Nagaram.lrc",
+  video: "/videos/New York Nagaram.mp4",
+  category: "Tamil",
   },
 ];
 
