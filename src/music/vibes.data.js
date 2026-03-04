@@ -1,6 +1,6 @@
 // src/music/vibes.data.js
 
-import { video } from "framer-motion/client";
+
 
 const vibes = [
   {
@@ -30,6 +30,16 @@ const vibes = [
   lyrics: "/lyrics/Écoute Chérie.lrc",
   category: "English · Classics",
 },
+{
+  id: "apt",
+  title: "APT",
+  artist: "ROSE, Bruno Mars",
+  cover: "/images/APT.png",
+  audio: "/sounds/APT.mp3",
+  lyrics: "/lyrics/APT.lrc",
+  video: "/videos/APT.mp4",
+  category: "English · Classics",
+},
   {
   id: "titli",
   title: "Titli",
@@ -37,6 +47,16 @@ const vibes = [
   cover: "/images/Titli.png",
   audio: "/sounds/Titli.mp3",
   lyrics: "/lyrics/Titli.lrc",
+  category: "Bollywood",
+},
+{
+  id: "malang",
+  title: "Malang",
+  artist: "Siddharth Mahadevan, Shilpa Rao",
+  cover: "/images/Malang.jpeg",
+  audio: "/sounds/Malang.mp3",
+  lyrics: "/lyrics/Malang.lrc",
+  video: "/videos/Malang.mp4",
   category: "Bollywood",
 },
   {
@@ -49,6 +69,36 @@ const vibes = [
   video: "/videos/New York Nagaram.mp4",
   category: "Tamil",
   },
+  {
+  id: "koondukkulla",
+  title: "Koondukkulla",
+  artist: "S. P. Balasubrahmanyam & S. Janaki",
+  cover: "/images/Koondukkulla.png",
+  audio: "/sounds/Koondukkulla.mp3",
+  lyrics: "/lyrics/Koondukkulla.lrc",
+  video: "/videos/Koondukkulla.mp4",
+  category: "Tamil",
+},
+{
+  id: "singari",
+  title: "Singari",
+  artist: "Pradeep Ranganathan",
+  cover: "/images/Singari.png",
+  audio: "/sounds/Singari.mp3",
+  lyrics: "/lyrics/Singari.lrc",
+  video: "/videos/Singari.mp4",
+  category: "Tamil",
+},
+{
+  id: "oorum-blood",
+  title: "Oorum Blood",
+  artist: "Sai Abhyankkar, Deepthi Suresh",
+  cover: "/images/Oorum Blood.png",
+  audio: "/sounds/Oorum Blood.mp3",
+  lyrics: "/lyrics/Oorum Blood.lrc",
+  video: "/videos/Oorum Blood.mp4",
+  category: "Tamil",
+},
 ];
 
 export default vibes;

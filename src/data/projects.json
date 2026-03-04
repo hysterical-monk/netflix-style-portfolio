@@ -74,8 +74,37 @@
     "github": "https://github.com/hysterical-monk/Email-Spam-Detection-using-NLP",
       "notebook": "https://github.com/hysterical-monk/Email-Spam-Detection-using-NLP/blob/main/nlp.ipynb"
     }
+  },
+  {
+  "id": "smart-ambulance-iot",
+  "title": "Smart Ambulance IoT System",
+  "description": "A large-scale IoT-based emergency healthcare system designed to enable real-time patient monitoring, intelligent communication, and seamless coordination between ambulances and hospitals.",
+  "image": "/images/ambulance-cover.jpeg",
+  "heroImage": "/images/ambulance-hero.jpeg",
+  "video": "/videos/smart-ambulance.mp4",
+  "subtitle": "Real-time emergency healthcare using IoT and full stack systems",
+  "tech": [
+    "IoT",
+    "Python",
+    "Django",
+    "JavaScript",
+    "React",
+    "NodeMCU (ESP8266)",
+    "Firebase",
+    "REST APIs",
+    "System Architecture Design"
+  ],
+  "outcomes": [
+    "Designed a real-time IoT system to monitor patient vitals during ambulance transit",
+    "Integrated hardware sensors with a backend server for live data transmission",
+    "Built web-based dashboards for hospitals to monitor incoming patients",
+    "Enabled real-time alerts and system coordination for emergency response",
+    "Developed an end-to-end full stack solution for a time-critical healthcare use case"
+  ],
+  "links": {
+    "github": "https://github.com/hysterical-monk/Smart-Ambulance-IoT"
   }
-  ,
+},
   {
   "id": "stock-crash-detector",
   "title": "Stock Market Crash Detector",

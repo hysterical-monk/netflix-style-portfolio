@@ -193,9 +193,6 @@ export default function HireMe() {
                   📧 srinivazzzat@gmail.com
                 </div>
 
-                <div className="bg-gray-100 rounded-lg px-4 py-3 text-sm">
-                  📞 +91 9449945527
-                </div>
               </div>
 
               <p className="mt-5 text-sm text-gray-500">

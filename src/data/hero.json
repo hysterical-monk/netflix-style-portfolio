@@ -20,16 +20,16 @@
     "id": 4,
     "title": "Skills",
     "subtitle": "Technologies I work with daily",
-    "imageDesktop": "/images/hero/skills-desktop.jpg",
-    "imageMobile": "/images/hero/skills-mobile.jpeg",
+    "imageDesktop": "/images/hero/skills-desktop.gif",
+    "imageMobile": "/images/hero/skills-mobile.gif",
     "link": "/skills"
   },
   {
     "id": 5,
     "title": "Resume",
     "subtitle": "Education, experience & achievements",
-    "imageDesktop": "/images/hero/resume-desktop.jpg",
-    "imageMobile": "/images/hero/resume-mobile.jpeg",
+    "imageDesktop": "/images/hero/resume-desktop.gif",
+    "imageMobile": "/images/hero/resume-mobile.gif",
     "link": "/hire"
   }
 ]
