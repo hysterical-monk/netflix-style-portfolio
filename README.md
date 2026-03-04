@@ -1,16 +1,87 @@
-# React + Vite
+# Netflix-Style Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Netflix-inspired developer portfolio** designed to present projects, skills, and professional journey in an interactive and cinematic browsing experience.
 
-Currently, two official plugins are available:
+Unlike traditional scrolling portfolios, this project uses a **content-driven interface inspired by streaming platforms**, where sections behave like media rows and interactive slides.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The goal was to build a portfolio that feels **engaging, visually immersive, and intuitive**, while still maintaining a clean structure for recruiters and visitors.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌐 Portfolio Website
 
-## Expanding the ESLint configuration
+**Portfolio Website**  
+[its-srinivas.netlify.app](http://its-srinivas.netlify.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- Netflix-style UI layout with horizontal browsing rows  
+- Interactive hero slides on the homepage  
+- Project showcase pages with detailed descriptions  
+- Smooth navigation and transitions  
+- Fully responsive design for desktop and mobile  
+- Clean dark-themed interface  
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend**
+- React
+- Vite
+- Tailwind CSS
+
+**Deployment**
+- Netlify
+
+**Version Control**
+- Git
+- GitHub
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+  components/
+  pages/
+  music/
+
+public/
+  images/
+  sounds/
+  videos/
+```
+
+The project follows a modular component structure to keep the code organized and maintainable.
+
+---
+
+## 🎯 Purpose
+
+This portfolio was created to explore:
+
+- Creative portfolio design
+- Interactive UI patterns
+- Modern frontend architecture
+- Media-driven user experiences
+
+It serves as a **personal showcase of projects, skills, and development journey.**
+
+---
+
+## 👤 Author
+
+**Srinivas**
+
+🌐 Portfolio  
+[Portfolio Website](http://its-srinivas.netlify.app/)
+
+📧 Email  
+[srinivazzzat@gmail.com](mailto:srinivazzzat@gmail.com)
+
+💼 LinkedIn  
+[linkedin.com/in/hysterical-monk](https://www.linkedin.com/in/hysterical-monk/)
