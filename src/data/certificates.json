@@ -5,7 +5,7 @@
     "subtitle": "Supervised, Unsupervised & Neural Networks with NLP",
     "issuer": "MEVI Technologies LLP",
     "type": "image/jpg",
-    "file": "/public/certificates/ml.jpg"
+    "file": "/certificates/ml.jpg"
   },
   {
     "id": "IBM-cert",
@@ -13,7 +13,7 @@
     "subtitle": "IBM Cloud Essentials is a comprehensive course that provides an introduction to IBM Cloud services and solutions, covering topics such as cloud computing, infrastructure, and various IBM Cloud offerings.",
     "issuer": "IBM",
     "type": "pdf",
-    "file": "/public/certificates/IBM.pdf"
+    "file": "/certificates/IBM.pdf"
   },
   {
     "id": "AWS-cert",
@@ -29,7 +29,7 @@
     "subtitle": "detailed workshop related to Django Full Stack",
     "issuer": "Devminds",
    "type": "image/jpg",
-    "file": "/public/certificates/djfs.jpg"
+    "file": "/certificates/djfs.jpg"
   },
   {
     "id": "tata-cert",
@@ -37,7 +37,7 @@
     "subtitle": "GenAI-powered Data Analytics job simulation, gaining hands-on experience by working on real-world projects and challenges.",
     "issuer": "Tata via Forage",
     "type": "pdf",
-    "file": "/public/certificates/tata.pdf"
+    "file": "/certificates/tata.pdf"
   },
     {
     "id": "stcom-cert",
@@ -45,7 +45,7 @@
     "subtitle": "GenAI-powered Data Analytics job simulation, gaining hands-on experience by working on real-world projects and challenges.",
     "issuer": "study comrade",
     "type": "image/jpg",
-    "file": "/public/certificates/stcom.jpg"
+    "file": "/certificates/stcom.jpg"
   }
   
 ]
