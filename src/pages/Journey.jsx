@@ -5,19 +5,19 @@ const education = [
   {
     year: "2022 – 2026",
     degree: "B.E – Artificial Intelligence & Machine Learning",
-    institute: "RajaRajeswari College of Engineering, VTU",
+    institute: "RajaRajeswari College of Engineering (under Visvesvaraya Technological University), Bengaluru",
     description:
-      "Focused on AI, ML, Data Structures, DBMS, CN, Deep Learning & Reinforcement Learning.",
+      "Focused on AI, Machine Learning, Data Structures, DBMS, Computer Networks, Deep & Reinforcement Learning.",
   },
   {
     year: "2019 – 2021",
-    degree: "PUC",
+    degree: "Pre-University Course",
     institute: "St. Joseph's Pre-University College, Bengaluru",
-    description: "Mathematics, Physics & Computer Science.",
+    description: "PCMB stream with a strong foundation in all subjects.",
   },
   {
     year: "2018 – 2019",
-    degree: "SSLC",
+    degree: "Secondary School Certificate",
     institute: "SJR Primary & High School, Bengaluru",
     description: "Strong academic foundation.",
   },
