@@ -18,7 +18,7 @@ export default function VibesPage() {
     <div className="bg-black min-h-screen text-white">
       {!activeSong && <Navbar />}
 
-      <main className="px-6 md:px-16 pt-28 pb-24">
+      <main className="px-6 md:px-16 pt-5 pb-24">
         <h1 className="text-5xl font-bold mb-12">
           Lately Vibing 🎧
         </h1>
@@ -43,4 +43,4 @@ export default function VibesPage() {
       )}
     </div>
   );
-}
+}                         
