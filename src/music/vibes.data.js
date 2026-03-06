@@ -1,5 +1,7 @@
 // src/music/vibes.data.js
 
+import { video } from "framer-motion/client";
+
 
 
 const vibes = [
@@ -47,6 +49,7 @@ const vibes = [
   cover: "/images/Titli.png",
   audio: "/sounds/Titli.mp3",
   lyrics: "/lyrics/Titli.lrc",
+  video: "/videos/Titli.mp4",
   category: "Bollywood",
 },
 {
