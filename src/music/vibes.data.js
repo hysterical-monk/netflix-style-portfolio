@@ -5,6 +5,15 @@ import { video } from "framer-motion/client";
 
 
 const vibes = [
+   {
+    id: "international-love",
+    title: "International Love",
+    artist: "Pitbull, Chris Brown",
+    cover: "/images/International Love.png",
+    audio: "/sounds/International Love.mp3",
+    lyrics: "/lyrics/International Love.lrc",
+    category: "English · Classics",
+  },
   {
     id: "teenage-dream",
     title: "Teenage Dream",
@@ -73,6 +82,16 @@ const vibes = [
   category: "Tamil",
   },
   {
+  id: "Engae",
+  title: "Engae Pogudho Vaanam",
+  artist: "A. R. Rahman, S. P. Balasubrahmanyam",
+  cover: "/images/Engae Pogudho Vaanam.png",
+  audio: "/sounds/Engae Pogudho Vaanam.mp3",
+  lyrics: "/lyrics/Engae Pogudho Vaanam.lrc",
+  video: "/videos/Engae Pogudho Vaanam.mp4",
+  category: "Tamil",
+},
+  {
   id: "koondukkulla",
   title: "Koondukkulla",
   artist: "S. P. Balasubrahmanyam & S. Janaki",
@@ -101,6 +120,16 @@ const vibes = [
   lyrics: "/lyrics/Oorum Blood.lrc",
   video: "/videos/Oorum Blood.mp4",
   category: "Tamil",
+},
+{
+  id: "kizhakku-pookkum",
+  title: "Kizhakkupookkum",
+  artist: "Shreya Ghoshal",
+  cover: "/images/Kizhakkupookkum.png",
+  audio: "/sounds/Kizhakkupookkum.mp3",
+  lyrics: "/lyrics/Kizhakkupookkum.lrc",
+  video: "/videos/Kizhakkupookkum.mp4",
+  category: "Malayalam",
 },
 ];
 
