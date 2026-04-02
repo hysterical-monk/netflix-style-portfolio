@@ -3,8 +3,8 @@
     "id": "About",
     "title": "About Me",
     "subtitle": "Who I am, what I do, and why I build",
-    "imageDesktop": "/images/hero/f49f0f57-9734-454c-8535-3199107e3e0b.jpg",
-    "imageMobile": "/images/hero/about-mobile.jpeg",
+    "imageDesktop": "/images/hero/f49f0f57-9734-454c-8535-3199107e3e0b.webp",
+    "imageMobile": "/images/hero/about-mobile.webp",
     "link": "/About"
   },
   {

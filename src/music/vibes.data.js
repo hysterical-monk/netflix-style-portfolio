@@ -131,6 +131,16 @@ const vibes = [
   video: "/videos/Kizhakkupookkum.mp4",
   category: "Malayalam",
 },
+  {
+  id: "pavazha-malli",
+  title: "Pavazha Malli",
+  artist: "Sai Abhyankkar",
+  cover: "/images/Pavazha Malli.png",
+  audio: "/sounds/Pavazha Malli.mp3",
+  lyrics: "/lyrics/Pavazha Malli.lrc",
+  category: "Tamil",
+}
+
 ];
 
 export default vibes;
